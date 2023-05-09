@@ -1,1 +1,7 @@
-<p>nav works!</p>
+<div class="nav">
+  <shared-button
+    *ngFor="let key of nav"
+    [link]="key.link"
+    [message]="key.title"
+  ></shared-button>
+</div>

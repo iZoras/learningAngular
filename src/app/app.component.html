@@ -1,14 +1,5 @@
-<div>{{ title }}</div>
-<a routerLink="/todo" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a>
-<div class="nav">
-  <shared-button
-    *ngFor="let key of nav"
-    [isShown]="key.isShown"
-    [link]="key.link"
-    [message]="key.title"
-  ></shared-button>
-</div>
 
+<app-nav></app-nav>
 <router-outlet></router-outlet>
 
 

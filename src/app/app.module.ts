@@ -11,6 +11,11 @@ import { TodoComponent } from './shared/ui/todo/todo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TodoPageComponent } from './pages/todo-page/todo-page.component';
 import { PostsPageComponent } from './pages/posts-page/posts-page.component';
+import { PageNotFoundPageComponent } from './pages/page-not-found-page/page-not-found-page.component';
+import { LayoutComponent } from './features/layout/layout.component';
+import { HeaderComponent } from './features/header/header.component';
+import { FooterComponent } from './features/footer/footer.component';
+import { SidebarComponent } from './features/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -23,6 +28,11 @@ import { PostsPageComponent } from './pages/posts-page/posts-page.component';
     TodoComponent,
     TodoPageComponent,
     PostsPageComponent,
+    PageNotFoundPageComponent,
+    LayoutComponent,
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
