@@ -1,0 +1,9 @@
+<div class="container container-col">
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="!loading" class="todo-container">
+    <div class="todo-headline">Todo List</div>
+    <shared-todo  *ngFor="let todo of todos" [todo]="todo"  (handleDelete) = 'handleDelete(todo.id)'></shared-todo>
+    <input (change) = 'handleInput($event)' type="text" class="add-input" placeholder="Enter todo..."/>
+    <button (click) = 'handlePageChange()'>page </button>
+  </div>
+</div>
